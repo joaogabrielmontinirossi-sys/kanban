@@ -1,6 +1,6 @@
 /* Kanban — service worker da versão web: guarda o app para abrir sem internet. */
-const VERSION = 'kanban-1.0.0';
-const FILES = ['./', 'index.html', 'app.css', 'store.js', 'sync.js', 'nucleo.js', 'app.js', 'vistas.js', 'pups-cartao.js', 'pups-fluxo.js', 'pups-dados.js', 'ini.js', 'logo.svg', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png'];
+const VERSION = 'kanban-1.0.0-e1';
+const FILES = ['./', 'index.html', 'elo.js', 'app.css', 'store.js', 'sync.js', 'nucleo.js', 'app.js', 'vistas.js', 'pups-cartao.js', 'pups-fluxo.js', 'pups-dados.js', 'ini.js', 'logo.svg', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
