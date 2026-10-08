@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kanban</title>
+<meta name="description" content="Kanban: quadros, listas e cartões com 120 power-ups. Vistas, automações, relatórios, tempo e fluxo, com sincronização pelo Google Drive.">
+<meta name="theme-color" content="#1D5FB8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kanban">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<nav id="side" aria-label="Navegação"></nav>
+<main id="main"></main>
+<div id="scrim"></div>
+<aside id="sheet" aria-live="polite"></aside>
+<div id="dlgw"><div id="dlg" role="dialog"></div></div>
+<div id="pop"></div>
+<div id="toast" role="status"></div>
+<input type="file" id="filepick" hidden>
+<script src="store.js"></script>
+<script src="sync.js"></script>
+<script src="nucleo.js"></script>
+<script src="app.js"></script>
+<script src="vistas.js"></script>
+<script src="pups-cartao.js"></script>
+<script src="pups-fluxo.js"></script>
+<script src="pups-dados.js"></script>
+<script src="ini.js"></script>
+</body>
+</html>
